@@ -33,11 +33,11 @@ fare = result['fare']
 
 map_df = pd.DataFrame(
     [
-        {"lat": pickup_latitude, "lon": pickup_longitude},   # pickup
-        {"lat": dropoff_latitude, "lon": dropoff_longitude}  # dropoff
+        {"lat": pickup_latitude, "lon": pickup_longitude},
+        {"lat": dropoff_latitude, "lon": dropoff_longitude}
     ]
 )
 
 st.map(map_df)
 
-st.markdown(f"💵 Predicted fare: **${fare:.2f}**")
+st.markdown(f"Predicted fare: {fare}")
